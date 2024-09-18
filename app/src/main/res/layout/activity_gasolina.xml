@@ -11,16 +11,162 @@
     <TextView
         android:id="@+id/tvTituloGasolina"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center"
         android:text="Conversor de Preços da Gasolina e Etanol"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tvEscolhaCombustivel"
+        app:layout_constraintEnd_toStartOf="@+id/btHome"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Conversor de Preços da Gasolina e Etanol" />
+
+    <Button
+        android:id="@+id/btHome"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="X"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvEscolhaCombustivel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEscolhaCombustivel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="tvEscolhaCombustivel"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloGasolina"
+        tools:text="Escolha o Tipo de Combustível" />
+
+    <RadioGroup
+        android:id="@+id/rGOpcoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEscolhaCombustivel">
+
+        <RadioButton
+            android:id="@+id/rbGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rbGasolina"
+            android:textSize="16sp"
+            tools:text="Gasolina" />
+
+        <RadioButton
+            android:id="@+id/rbEtanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rbEtanol"
+            android:textSize="16sp"
+            tools:text="Etanol" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutInputGasolina"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rGOpcoes">
+
+        <TextView
+            android:id="@+id/tvReais1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="R$:"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/tinputPrecoGasolina"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Digite o Preço da Gasolina"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutInputEtanol"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputGasolina">
+
+        <TextView
+            android:id="@+id/tvReais2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="R$:"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/tinputPrecoEtanol"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Digite o Preço do Etanol"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btLimpar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Limpar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMelhorPreco" />
+
+    <TextView
+        android:id="@+id/tvMelhorPreco"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="..."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputEtanol" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

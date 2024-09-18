@@ -68,6 +68,6 @@ Este código está licenciado sob a Licença do MIT (veja o arquivo LICENSE para
 
 # 3. **Contato**
 **Desenvolvedor:**
-Nome: Laion Ubert Vieira Santos
-Email: laiondevubert@gmail.com  
-Website: www.laionubert.com.br
+   - Nome: Laion Ubert Vieira Santos
+   - E-mail: laiondevubert@gmail.com  
+   - Website: www.laionubert.com.br

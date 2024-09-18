@@ -55,7 +55,7 @@ A terceira atividade exibe um relatório simples contendo os seguintes dados de 
 - Curso
 - Código de Matrícula
 - Semestre
-- Disciplinas
+- Disciplina
 
 Essa atividade apresenta os dados em uma lista para fácil visualização.
 
@@ -69,5 +69,5 @@ Este código está licenciado sob a Licença do MIT (veja o arquivo LICENSE para
 # 3. **Contato**
 **Desenvolvedor:**
 Nome: Laion Ubert Vieira Santos
-Email: [laiondevubert@gmail.com]  
-Website: [www.laiondevubert.com.br]
+Email: laiondevubert@gmail.com  
+Website: www.laionubert.com.br

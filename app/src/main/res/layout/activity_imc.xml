@@ -47,7 +47,7 @@
     <EditText
         android:id="@+id/tinputPeso"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Peso (em kg)"
@@ -60,7 +60,7 @@
     <EditText
         android:id="@+id/tinputAltura"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Altura (em cm)"
@@ -74,7 +74,7 @@
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginTop="32dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +110,7 @@
     <TextView
         android:id="@+id/tvClassificacao"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="Classificação"

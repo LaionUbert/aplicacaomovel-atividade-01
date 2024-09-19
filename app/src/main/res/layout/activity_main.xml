@@ -17,8 +17,9 @@
         android:text="Aplicações Móveis - AT1"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="48sp"
+        android:textSize="32sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/lvButtons01"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -44,7 +45,7 @@
             android:layout_weight="1"
             android:text="Calculadora IMC"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="48sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             tools:text="Calculadora IMC" />
 
@@ -54,18 +55,18 @@
             android:layout_height="match_parent"
             android:layout_margin="12dp"
             android:layout_weight="1"
-            android:text="Calculadora Gasolina"
+            android:fontFamily="sans-serif"
+            android:text="Preços de Combustíveis"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="48sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            tools:text="Calculadora Gasolina" />
+            tools:text="Preços de Combustíveis" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/lvButtons02"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/tvRodape"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,7 +81,7 @@
             android:layout_weight="1"
             android:text="Matrícula Aluno"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="48sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             tools:text="Matrícula Aluno" />
 
@@ -92,7 +93,7 @@
             android:layout_weight="1"
             android:text="Fechar"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="48sp"
+            android:textSize="32sp"
             android:textStyle="bold"
             tools:text="Fechar" />
     </LinearLayout>

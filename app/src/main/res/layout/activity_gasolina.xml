@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24sp"
+    android:layout_margin="24sp"
     tools:context=".ActivityGasolina">
 
     <TextView
@@ -46,7 +46,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="tvEscolhaCombustivel"
+        android:text="Escolha o Tipo de Combustível"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
@@ -56,43 +56,15 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTituloGasolina"
         tools:text="Escolha o Tipo de Combustível" />
 
-    <RadioGroup
-        android:id="@+id/rGOpcoes"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEscolhaCombustivel">
-
-        <RadioButton
-            android:id="@+id/rbGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="rbGasolina"
-            android:textSize="16sp"
-            tools:text="Gasolina" />
-
-        <RadioButton
-            android:id="@+id/rbEtanol"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="rbEtanol"
-            android:textSize="16sp"
-            tools:text="Etanol" />
-
-    </RadioGroup>
-
     <LinearLayout
         android:id="@+id/layoutInputGasolina"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rGOpcoes">
+        app:layout_constraintTop_toBottomOf="@+id/tvEscolhaCombustivel">
 
         <TextView
             android:id="@+id/tvReais1"
@@ -101,7 +73,10 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="R$:"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/tinputPrecoGasolina"
@@ -116,7 +91,7 @@
     <LinearLayout
         android:id="@+id/layoutInputEtanol"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -130,7 +105,10 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="R$:"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/tinputPrecoEtanol"
@@ -142,31 +120,76 @@
             android:inputType="numberDecimal" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btLimpar"
+    <RadioGroup
+        android:id="@+id/rGOpcoes"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Limpar"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutInputEtanol">
+
+        <RadioButton
+            android:id="@+id/rbGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gasolina"
+            android:textSize="24sp"
+            tools:text="Gasolina" />
+
+        <RadioButton
+            android:id="@+id/rbEtanol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Etanol"
+            android:textSize="24sp"
+            tools:text="Etanol" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvRelacaoPreco"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Relação do Preço"
+        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvMelhorPreco"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMelhorPreco" />
+        app:layout_constraintTop_toBottomOf="@+id/rGOpcoes" />
 
     <TextView
         android:id="@+id/tvMelhorPreco"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="75dp"
         android:layout_marginTop="24dp"
-        android:text="..."
+        android:gravity="center"
+        android:text="Melhor Combustível"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutInputEtanol" />
+        app:layout_constraintTop_toBottomOf="@+id/tvRelacaoPreco" />
+
+    <Button
+        android:id="@+id/btLimpar"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="32dp"
+        android:text="Limpar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMelhorPreco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

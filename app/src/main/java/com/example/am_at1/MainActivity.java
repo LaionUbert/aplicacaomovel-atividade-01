@@ -56,10 +56,11 @@ public class MainActivity extends AppCompatActivity {
         btFechar=(Button)findViewById(R.id.btFechar);
         btFechar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                finishAffinity();
+
                 System.exit(0);
             }
         });
-
     }
 }

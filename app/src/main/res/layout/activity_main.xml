@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:fontFamily="monospace"
-        android:text="Aplicações Móveis - AT1"
+        android:gravity="center"
+        android:text="Aplicações Móveis AT1"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
@@ -22,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Aplicações Móveis - AT1" />
+        tools:text="Aplicações Móveis AT1" />
 
     <Button
         android:id="@+id/btIMC"
@@ -35,6 +36,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloHome"
@@ -52,6 +54,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:cornerRadius="100dp"
         app:layout_constraintBottom_toTopOf="@+id/btMatricula"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,6 +72,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btGasolina"
@@ -85,6 +89,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="32sp"
         android:textStyle="bold"
+        app:cornerRadius="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btMatricula"

@@ -18,7 +18,6 @@
         android:text="Calculadora IMC"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btHome"
@@ -52,6 +51,7 @@
         android:ems="10"
         android:hint="Peso (em kg)"
         android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,6 +66,7 @@
         android:hint="Altura (em cm)"
         android:inputType="number"
         android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +91,6 @@
             android:text="IMC:"
             android:textAlignment="viewStart"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
             android:gravity="center"
             android:text="Resultado IMC"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="24sp"
             tools:text="..." />
     </LinearLayout>
@@ -116,7 +116,7 @@
         android:text="Classificação"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

@@ -18,7 +18,6 @@
         android:text="Conversor de Preços da Gasolina e Etanol"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tvEscolhaCombustivel"
@@ -74,7 +73,7 @@
             android:gravity="center"
             android:text="R$:"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -85,7 +84,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Digite o Preço da Gasolina"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     </LinearLayout>
 
     <LinearLayout
@@ -106,7 +106,7 @@
             android:gravity="center"
             android:text="R$:"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -117,7 +117,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Digite o Preço do Etanol"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     </LinearLayout>
 
     <RadioGroup
@@ -135,6 +136,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Gasolina"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="24sp"
             tools:text="Gasolina" />
 
@@ -143,6 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Etanol"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="24sp"
             tools:text="Etanol" />
 
@@ -155,7 +158,7 @@
         android:layout_marginTop="24dp"
         android:gravity="center"
         android:text="Relação do Preço"
-        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tvMelhorPreco"
